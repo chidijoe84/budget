@@ -1,0 +1,140 @@
+:root{
+    --box-shadow: 0px 1px 4px 1px rgba(199,199,199,1);
+    --income:blue;
+    --expense:red;
+}
+
+.fa-plus{
+    padding-right: 40px;
+}
+
+.formfill{
+    display: flex;
+    justify-items: center;
+    padding-top: -20px;
+    align-items: center;
+    width: 40%;
+}
+body{
+    font-family: cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.app h1{
+    text-align: center;
+}
+h2{
+    text-transform: uppercase;
+}
+.balance-container #balance {
+    font-size: 1.5em;
+}
+.cashflow-container{
+    display: flex;
+    box-shadow: var(--box-shadow);
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 15%;
+    margin-top: 20px;
+}
+.income-container{
+    border-right: 4px solid #ccc;
+    padding-right: 20px;
+}
+.expense-container{
+    padding-left: 20px;
+}
+#income, #expense{
+    font-size: 1.3em;
+}
+#income{
+    color: var(--income);
+}
+#expense{
+    color:var(--expense);
+}
+.transaction-container{
+    margin-top: 50px;
+    margin-left: 40%;
+}
+#transaction{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#transaction li{
+    display: flex;
+    justify-content:space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: var(--box-shadow);
+}
+#transaction li .income-amt{
+    display: inline-block;
+    background-color: var(--income);
+    color: whitesmoke;
+    padding: 5px;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+#transaction li .expense-amt {
+    display: inline-block;
+    background-color: var(--expense);
+    color: whitesmoke;
+    padding: 5px;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+.form-container{
+    margin-top: -150px;
+    border-right:6px solid #ccc;
+    border-top: 6px solid #ccc;
+    padding: 10px;
+}
+.form-container h2{
+    text-align: center;
+}
+.form-container form{
+    display: flex;
+    flex-direction: column;
+}
+.form-container form label{
+    padding: 10px;
+}
+.form-container form input{
+    height: 25px;
+    margin-bottom: 5px;
+}
+.form-container form button{
+    font-family: cursive;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+#incomeBtn{
+    background-color: var(--income);
+}
+#expenseBtn{
+    background-color: var(--expense);
+}
+
+.house {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 10%;
+}
+
+
+   
